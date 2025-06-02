@@ -71,3 +71,18 @@ function ChatMessages({ messages }) {
 
 npm install react-scroll-to-bottom
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: rgb(25, 32, 36);
+  border-radius: 10px;
+}
