@@ -54,3 +54,20 @@ app.post('/message', async (req, res) => {
     res.status(500).json({ message: 'Message not sent', error: err });
   }
 });
+
+import ScrollToBottom from 'react-scroll-to-bottom';
+
+function ChatMessages({ messages }) {
+  return (
+    <ScrollToBottom className="info--dataShow" style={{ height: '80vh' }}>
+      {messages.map((msg, idx) => (
+        <div key={idx} className="message">
+          {msg.text}
+        </div>
+      ))}
+    </ScrollToBottom>
+  );
+}
+
+npm install react-scroll-to-bottom
+
