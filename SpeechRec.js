@@ -1,5 +1,5 @@
 const start = document.querySelector("#start");
-
+ 
 const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
 const recognition = new SpeechRec();
 
